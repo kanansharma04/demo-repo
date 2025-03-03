@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="flower.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Onest:wght@500&display=swap');
+    </style>
+  
+   
+</head>
+
+<body class="homebody"> 
+    <div id="header">
+        <div class="container">
+            <img src="" alt="">
+            <ul>
+
+                <li>
+                    <a href="index2.html">HOME</a>
+                </li>
+
+                <li>
+                    <a href="product2.html">PRODUCT</a>
+                </li>
+                <li>
+                    <a href="gallery2.html">GALLERY</a>
+                </li>
+                <li>
+                    <a href="contact2.html">CONTACT</a>
+                </li>
+                <li>
+                    <a href="about2.html">ABOUT</a>
+                </li>
+            </ul>
+            <h2 style="font-family: 'Dancing Script'; margin: 0; margin-left: 20px;    font-size: 45px;">💐Flower Point💐</h2>
+        </div>
+    </div>
+    <div class="card">
+        <div style="width: 50%; float: left;">
+            <form id="signupForm" onsubmit="return validateForm()">
+                <div class="input">
+                <label for="name">  FIRST NAME: </label>
+                <input type="name" name="NAME">
+                </div>
+                <div  class="input">
+                <label for="name">  LAST NAME: </label>
+                <input type="name" name="NAME">
+            </div>
+            <div  class="input">
+            <label for="password"> PASSWORD: </label>
+            <input type="password" name="password" >
+        </div>
+        <div  class="input">
+            <label for="email"> E-MAIL : </label>
+            <input type="email" name="email" >
+        </div>
+        <div  class="input">
+            <label for="gender"> GENDER : </label>
+            <input type="radio" name="t">MALE
+            <input type="radio" name="t">FEMALE
+        </div>
+        <div  class="input">
+            <label for="language">SELECT LANGUAGE : </label>
+            <select name="language" id="lang">
+                <option value="ENGLISH">ENGLISH</option>
+                <option value="HINDI">HINDI</option>
+                <option value="FRENCH">FRENCH</option>
+                <option value="SPANISH">SPANISH</option>
+              </select>
+        </div>
+        <div  class="input">
+            <label id="lab">ANY COMMENT?</label>
+            <textarea name="" id="" cols="30" rows="2"></textarea>
+        </div>
+            </form>
+            <div>
+                <button class="contact_btn">
+                  Submit</button>
+            </div>
+        </div>
+        <div style="width: 50%; float: right;">
+            <div id="detail">
+                <p><b>Free Toll :</b> +91 1800-567-345
+                    <br><br>
+                <b>Call Us At :</b>
+                <br><br>
+                <b>India :</b> +91 986-678-4567<br><br>
+                <b>US :</b> +1 839-456-1234<br><br>
+                <b>Australia :</b> +61 567-56-1234<br><br>
+                <b>Whatsapp Us At:</b> +91 987-654-2345<br><br>
+                
+                <b>Email Us At:</b> point.flower@gmail.com<br>
+                <br>
+                
+                For Any Query ? Contact Us By Sign In With Given Form
+                </p>
+                
+                
+                </div>
+        </div>
+
+    </div>
+    <div style="height:50px; position:absolute; top:1800px; width:99%;"></div>
+    <div id='foot'>&copy; 2022 User Detail</div>
+    <script>
+    function validateForm() {
+      var firstName = document.getElementById("firstName").value;
+      var lastName = document.getElementById("lastName").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      var language = document.getElementById("language").value;
+
+      var firstNameError = document.getElementById("firstNameError");
+      var lastNameError = document.getElementById("lastNameError");
+      var emailError = document.getElementById("emailError");
+      var passwordError = document.getElementById("passwordError");
+      var languageError = document.getElementById("languageError");
+
+      // Reset error messages
+      firstNameError.innerHTML = "";
+      lastNameError.innerHTML = "";
+      emailError.innerHTML = "";
+      passwordError.innerHTML = "";
+      languageError.innerHTML = "";
+
+      // Validate First Name
+      if (firstName === "") {
+        firstNameError.innerHTML = "First Name is required";
+        return false;
+      }
+
+      // Validate Last Name
+      if (lastName === "") {
+        lastNameError.innerHTML = "Last Name is required";
+        return false;
+      }
+
+      // Validate Email
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        emailError.innerHTML = "Invalid email address";
+        return false;
+      }
+
+      // Validate Password
+      if (password === "") {
+        passwordError.innerHTML = "Password is required";
+        return false;
+      }
+
+      // Validate Language
+      if (language === "") {
+        languageError.innerHTML = "Language is required";
+        return false;
+      }
+
+      // Form is valid
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Josefin+Sans&family=Onest:wght@500&family=Satisfy&display=swap');
+
+        .submit {
+            font-family: 'josefin sans';
+            padding: 15px;
+            margin-top: 39px;
+            margin-left: 120px;
+            font-family: 'Josefin Sans', sans-serif;
+            border: 2px solid rgb(240, 234, 234);
+            font-size: 20px;
+            border-radius: 25px;
+            background-color: transparent;
+            color: white;
+            transition: all 0.2s ease-in-out;
+           
+        }
+
+        .submit:hover {
+            color: rgb(18, 17, 17);
+            background-color: rgb(236, 231, 231);
+            font-size: 22px;
+            border: 2px solid black;
+        
+        }
+
+
+        .form {
+            font-family: 'josefin sans';
+            font-size: 20px;
+        }
+
+        input {
+            text-decoration: none;
+            border: 0;
+            border-bottom: 1px solid black;
+            width: 350px;
+            height: 25px;
+            background: transparent;
+            color: aliceblue;
+        }
+
+        body {
+            background-image: url('images/flower.jpeg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div>
+            <h1
+                style="text-align: center; font-family: 'Josefin Sans', sans-serif; margin-top: 90px; font-size: 42px; margin-left: -155px;" >
+                LOGIN FORM
+            </h1>
+        </div>
+        <div class="form" style="color: aliceblue;">
+
+            <div style="float: right; width: 60%; padding: 90px;">
+
+                <div><label for="name"> * YOUR NAME: </label><br>
+                    <input type="text" name="name" id="name"><br>
+                </div>
+                <div style="margin-top: 50px;">
+                    <label for="email">* YOUR E-MAIL: </label><br>
+                    <input type="email" name="email" id="email"><br>
+                </div>
+                <div style="margin-top: 50px;">
+                    <label for="feedback">*PASSWORD: </label><br>
+                    <input type="password" name="password" id="password"><br>
+
+                </div>
+                <button class="submit">SUBMIT </button>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

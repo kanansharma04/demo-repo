@@ -1,0 +1,193 @@
+#header {
+  box-shadow: rgba(239, 152, 152, 0.663) 0px 3px 8px;
+  height: 60px;
+  background-image: url('images/flower.jpeg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: pink;
+  height: 80px;
+
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  padding: 12px;
+}
+
+li {
+  list-style: none;
+  font-size: 22px;
+  font-family: 'Josefin Sans', sans-serif;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+a:hover {
+  border-bottom: 3px solid rgb(239, 90, 115);
+  color: rgb(239, 90, 115);
+  transition: all 0.1s ease-in-out;
+  font: bold;
+
+
+}
+
+ul {
+  display: flex;
+  float: right;
+  padding-top: 6px;
+  margin-top: 21px;
+
+}
+
+.intro {
+  padding: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+  color: rgb(241, 104, 127);
+}
+
+.intro2 {
+  margin-left: 50px;
+  font-size: 34px;
+  font-family: 'dancing script';
+
+}
+
+.flowerimg {
+  margin-left: auto;
+  width: 135%;
+  background-size: 90px 90px;
+  /* margin-top: -75px; */
+
+}
+
+
+#foot {
+  width: 97%;
+  height: 35px;
+  color: black;
+  position: fixed;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: rgb(255, 176, 189);
+  bottom: 0;
+  padding-left: 30px;
+  padding-top: 5px;
+  z-index: 1;
+}
+
+.headings {
+  color: rgb(241, 104, 127);
+  font-family: 'josefin sans', sans-serif;
+  margin-top: 50px;
+
+}
+
+.brief {
+  font-family: 'josefin sans', sans-serif;
+  font-size: 25px;
+  margin: 0;
+}
+
+
+/* [ABOUT CSS] */
+
+
+.table {
+  width: 60%;
+  position: relative;
+  top: 20px;
+  left: 300px;
+  border: 1px solid pink;
+  text-align: center;
+  border-collapse: collapse;
+  font-family: 'josefin sans ', sans-serif;
+
+}
+
+th,
+td {
+  border: 1px solid rgb(255, 176, 189);
+  padding: 5px;
+
+}
+
+tr:nth-child(even) {
+  background-color: rgb(255, 176, 189);
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(229, 25, 25, 0.085);
+}
+ 
+
+/* 
+[CONTACT CSS] */
+
+
+
+.card {
+  height: 500px;
+  width: 900px;
+  box-shadow: rgba(239, 152, 152, 0.663) 0px 3px 8px;
+  border-radius: 10px;
+  position: relative;
+  top: 45px;
+  left: 300px;
+  font-family: 'josefin sans', sans-serif;
+}
+
+.input {
+  padding: 18px;
+
+
+}
+
+input {
+  text-decoration: none;
+  border: 0;
+  border-bottom: 1px solid rgb(251, 114, 137);
+
+}
+
+textarea {
+  text-decoration: none;
+  border: 0;
+  border-bottom: 1px solid rgb(251, 114, 137);
+}
+
+#detail {
+  background-color: pink;
+  font-family: 'josefin sans', sans-serif;
+  padding: 66px;
+  font-size: 18px;
+
+}
+
+.contact_btn {
+  width: 100px;
+  width: 100px;
+  height: 40px;
+  text-decoration: none;
+  margin-left: 150px;
+  margin-top: 15px;
+  background-color: pink;
+  border: 0;
+  font-family: 'Josefin sans', sans-serif;
+  font-size: 20px;
+  transition : all ease-in-out 0.2s;
+}
+.contact_btn:hover{
+  background-color: palevioletred;
+  font-size: 22px;
+  color: aliceblue;
+  cursor: pointer;
+
+}
+.homebody{
+  overflow: hidden;
+}
